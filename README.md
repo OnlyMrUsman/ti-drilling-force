@@ -51,12 +51,19 @@ is a random forest exported to JSON and run client-side in the web app.
 
 ## Repository structure
 ti-drilling-force/
+
 ├── notebooks/ # full reproducible analysis (Part A: all coolants, Part B: dry deep-dive)
+
 ├── src/ # web-app template + build script + report generators
+
 ├── webapp/ # built two-tab predictor (index.html) + model.json
+
 ├── docs/ # GitHub Pages copy of the app
+
 ├── figures/ # generated charts
+
 ├── report/ # Word reports
+
 └── data/ # raw experiment files go in data/raw/ (not committed)
 ## Reproduce
 

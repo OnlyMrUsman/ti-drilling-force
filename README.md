@@ -38,7 +38,7 @@ signals (Fx/Fy/Fz at 5050 Hz, 3 holes each), used to extract all three forces an
 | Question | Result |
 |---|---|
 | Predict thrust `Fz`? | Yes — ~6% leave-one-out error (≈55 N) across all coolants; ~4.4% on the dry block |
-| Predict radial `Fx`, `Fy`? | Yes, with larger relative error (~16–20%) — they are small (~50 N) and noisy |
+| Predict radial `Fx`, `Fy`? | Yes, with larger relative error (~16–20%) they are small (~50 N) and noisy |
 | Lowest-force settings? | **CO₂ or MQL** cooling and **no pecking**; cryogenic **LN₂** gives the highest force |
 | Reproducible? | Forces repeat to ~4% hole-to-hole, with a slow upward drift from tool wear |
 
@@ -46,7 +46,7 @@ signals (Fx/Fy/Fz at 5050 Hz, 3 holes each), used to extract all three forces an
 
 Forces are extracted from the raw signals (engaged-region peak and mean). Six model families
 (linear, ridge, decision tree, random forest, gradient boosting, Gaussian process) are compared under
-**leave-one-out cross-validation** — the honest validation choice at this sample size. The final model
+**leave-one-out cross-validation** the honest validation choice at this sample size. The final model
 is a random forest exported to JSON and run client-side in the web app.
 
 ## Repository structure
